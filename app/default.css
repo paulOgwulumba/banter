@@ -1,0 +1,468 @@
+message-row{
+  padding: 10px;
+}
+
+p{
+  padding: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: aquamarine;
+  background-image: url("./images/doggy5.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+html, body{
+  overflow: initial !important;
+}
+
+.message {
+  color: #000;
+  clear: both;
+  opacity: 0.9;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  min-width: 15%;
+  max-width: 70%;
+  word-wrap: break-word;
+  z-index: 108;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.message:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.message:first-child {
+  margin: 16px 0 8px;
+}
+
+.message.received {
+  background: whitesmoke;
+  border-radius: 0% 0% 25% 25%;
+  float: left;
+}
+
+.message.received .metadata {
+  padding: 0 0 0 16px;
+}
+
+.message.received:after {
+  border-width: 0px 15px 15px 0;
+  border-color: transparent whitesmoke transparent transparent;
+  border-radius: 100% 0% 0% 100%;
+  top: 0px;
+  left: -15px;
+}
+
+.message.sent {
+  background: rgb(241, 155, 155);
+  border-radius: 0% 0% 25% 25%;
+  float: right;
+}
+
+
+.message.sent:after {
+  border-width: 0px 0 15px 15px;
+  border-color: transparent transparent transparent rgb(241, 155, 155);
+  border-radius: 0% 100% 100% 0%;
+  top: 0;
+  right: -15px;
+}
+
+
+
+
+
+.conversation {
+  height: 100%;
+  background: transparent;
+  z-index: 0;
+  width: 100%;
+}
+
+.conversation ::-webkit-scrollbar {
+  transition: all .5s;
+  width: 5px;
+  height: 1px;
+  z-index: 10;
+}
+
+.conversation ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.conversation ::-webkit-scrollbar-thumb {
+  background: rgb(99, 39, 57);
+}
+
+.conversation .conversation-container {
+  height: calc(100% - 68px);
+  box-shadow: inset 10px 10px 10px -10px #000000;
+  overflow-x: hidden;
+  padding: 0 16px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.conversation .conversation-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.time {
+  font-size: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffde78;
+  padding: 3px;
+}
+
+.input-field-box{
+  background-color:rgb(105, 20, 20);
+  padding: 5px;
+  padding-top: 10px;
+  opacity: 0.99;
+  overflow: hidden;
+}
+
+.header{
+  font-family: cursive;
+  color: rgb(105, 20, 20);
+  padding: 1%;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  background-image: url("Images/doggy1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header .header-text{
+  font-size: 50px;
+}
+
+.mast-head{
+  background-color: rgb(99, 39, 57);
+  padding-top: 10px;
+  opacity: 0.98;
+}
+
+.logo-image{
+  float: left;
+}
+
+.link-text{
+  color: rgb(230, 157, 157);
+}
+
+.link-text-disabled{
+  color: rgb(90, 136, 90);
+}
+
+.link-text-active{
+  color: rgb(230, 157, 157);
+  text-decoration: underline;
+}
+
+.link-text:hover{
+  color: rgb(103, 255, 73);
+}
+
+.link-text-active:hover{
+  color: rgb(103, 255, 73);
+}
+
+.form-container{
+  background-color: rgb(204, 174, 174); 
+  padding: 20px;
+  margin-top: 2%;
+  border-radius: 40px 40px 40px 40px;
+  opacity: 0.95;
+}
+
+input::placeholder{
+  color: blue;
+}
+
+.eye{
+  margin-left: 4px;
+  height: 100%;
+  color:rgb(105, 20, 20);
+}
+
+.eye:hover{
+  color: rgb(209, 38, 38);
+}
+
+.close{
+  background-color: gray;
+}
+
+.link-icon:hover{
+  color: rgb(48, 48, 184);
+}
+
+.link-icon{
+  color: red;
+}
+
+.banter{
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.icon{
+  color: whitesmoke;
+}
+.foot{
+  font-family: cursive;
+  color: rgb(105, 20, 20);
+  padding: 1%;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  background-image: url("Images/doggy3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.burgundy{
+  color: rgb(105, 20, 20);
+}
+
+.user-profile {
+  width: 100%;
+  height: 10%;
+  color: white;
+  background: inherit;
+  border-bottom: 1px groove rgb(114, 104, 104);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.user-profile.active {
+  background-image: url("./Images/TChalla.jpg");
+  border-color: inherit;
+  border-top: 1px groove;
+  border-left: 1px groove;
+  border-bottom: 1px groove;
+  font-style: italic;
+  font-weight: bolder;
+  color: black
+}
+
+.user-profile.active:hover{
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.user-profile:hover{
+  background: rgb(185, 179, 179);
+  opacity: 0.6;
+  color: black;
+}
+
+.chat-header {
+  background: rgb(48, 12, 12);
+  padding: 5px 5px 0px 5px;
+	text-align: left;
+  overflow-y: scroll;
+  height: 100%;
+  float: left;
+  width: 20%;
+  margin-right: 20px;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+.chat-header span {
+  font-size: 12px;
+  margin: 47px -50px;
+  font-style: 'sans';
+}
+
+.chat-header ::-webkit-scrollbar {
+  transition: all .5s;
+  width: 5px;
+  height: 1px;
+  z-index: 10;
+}
+
+.chat-header ::-webkit-scrollbar-track {
+  background: black;
+}
+
+.chat-header ::-webkit-scrollbar-thumb {
+  background: rgb(99, 39, 57);
+}
+
+#app{
+  height: 100%;
+  margin-top: 10px;
+}
+
+.side-nav{
+  background-color: rgb(26, 8, 8); 
+  width: 16%; 
+  height: 100%;
+  text-align: center;
+  opacity: 0.8
+}
+
+.date-bubble{
+  background-color: rgb(17, 15, 15);
+  text-align: center;
+  border-radius: 20% 20% 20% 20%;
+  text-decoration: double;
+  text-decoration-color: rgb(241, 237, 237);
+  opacity: 0.4;
+  color: rgb(241, 239, 239);
+  clear: both;
+  line-height: 100%;
+  font-size: 20px;
+  padding: 8px;
+  position: relative;
+  left: 35%;
+  margin: 8px 0;
+  max-width: 30%;
+  word-wrap: break-word;
+  font-family: Calibri;
+}
+
+.date-bubble:hover{
+  opacity: 0.6
+}
+
+.date-bubble.inactive{
+  display: none
+}
+
+.trial{
+  align-items: center;
+}
+
+.check{
+  font-size: small;
+}
+
+.la-box{
+  box-shadow: inset 10px 10px 10px -10px #000000;
+  height: calc(100% - 30px);
+  background: transparent;
+  padding: 15px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+.la-box .la-box-box{
+  box-shadow: inset 10px 10px 10px -10px #000000;
+  height: 90%;
+  margin-top: 10px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.la-box .la-box-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.la-box-box::-webkit-scrollbar {
+  transition: all .5s;
+  width: 10px;
+  height: 1px;
+  z-index: 10;
+}
+
+.la-box-box::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 10px 10px 10px -10px #000000
+}
+
+.la-box-box::-webkit-scrollbar-thumb {
+  background: rgb(99, 39, 57);
+}
+
+.la-small-box{
+  box-shadow: inset 10px 10px 10px -10px #000000;
+  border-radius: 10px;
+  min-height: 10%;
+  padding: 5px;
+  padding-left: 2%;
+}
+
+.user-card{
+  width: 80%;
+  border-radius: 5px;
+  min-height: 55px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: whitesmoke;
+  background-color: black;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.user-card:hover{
+  cursor: pointer;
+  opacity: 0.99;
+  background-color: rgb(20, 5, 5);
+}
+
+.confirmation-box {
+  background-color: rgb(197, 164, 164);
+  border-radius: 5px;
+  padding: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.white-text{
+  color: white
+}
+
+.request-icon{
+  color:rgb(207, 175, 175);
+  font-size: large;
+}
+
+.request-icon:hover{
+  color: rgb(129, 55, 55);;
+  cursor: pointer;
+  font-size: larger;
+}

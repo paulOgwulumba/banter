@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Banter - sign up</title>
+
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="default.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="mast-head">
+    <div class="pull-left banter"><h3><span class="fa fa-lemon-o"></span></h3></div>
+    <div class="pull-right banter"><h3><span class="fa fa-lemon-o"></span></h3></div>
+    <div class="header col-6 offset-3">
+      <p class=" header-text text-center"><span class="fa fa-magnet"></span>__ B A N T E R __<span class="fa fa-magnet"></span></p> 
+    </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"><span class="link-text">Home</span> <span class="fa fa-home icon"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html"><span class="link-text">About</span> <span class="fa fa-question icon"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./log-in.html"><span class="link-text">Log in</span> <span class="fa fa-book icon"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="./sign-up.html"><span class="link-text link-text-active">Sign Up</span> <span class="fa fa-pencil icon"></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+    <div id="app">
+      <div class="container">
+        <div class="row form-container">
+          <form role="form" class="col-6 offset-3 col-xs-8 offset-xs-2 col-sm-8 offset-sm-2">
+            <h3 class="text-center banter burgundy">Create &nbsp;<strong>B A N T E R</strong> account</p></h3>
+            <h5 class="text-center">Enter your details</h5>
+            <hr>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Name:</label>
+              <input type="text" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" placeholder="Enter your full name"id="name">
+              <small id="nameHelp" class="form-text text-danger offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2"></small>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Username:</label>
+              <input type="text" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" id="username">
+              <small id="usernameHelp" class="form-text text-danger offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2"></small>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Gender:</label>
+              <select name="gender" id="gender" class="form-control col-xs-2 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Email:</label>
+              <input type="email" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" id="email" placeholder="Enter active email address">
+              <small id="emailHelp" class="form-text text-success offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2">
+                Your email is safe with us
+              </small>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Date of birth:</label>
+              <input type="date" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" id="dob">
+              <small id="dobHelp" class="form-text offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2 text-danger"></small>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Password:</label>
+              <input type="password" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" id="password">
+              <span id="password-toggler" class="fa pull-right form-text eye fa-eye-slash"></span>
+              <small id="passwordHelp" class="form-text text-danger offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2"></small>
+            </div>
+            <div class="form-group form-row">
+              <label class="form-text col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 burgundy">Confirm Password:</label>
+              <input type="password" class="form-control col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8" id="confirmPassword">
+              <span id="password-toggler2" class="fa pull-right form-text eye fa-eye-slash"></span>
+              <small id="confirmPasswordHelp" class="form-text text-danger offset-xs-3 offset-sm-3 offset-md-3 offset-lg-2 offset-xl-2"></small>
+            </div>
+            <hr>
+            <button type="button" id="submitButton" class="btn btn-danger offset-5">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <nav class="navbar navbar-expand-sm navbar-light rounded mast-head" style="top: 12%">
+    <div class="foot"><p class="pull-right"><span class="fa fa-magnet"></span>__ B A N T E R __<span class="fa fa-magnet"></span></p></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html"><abbreviation title="Home"><span class="fa fa-home icon"></span></abbreviation> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html"><abbreviation title="About"><span class="fa fa-question icon"></span></abbreviation></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./log-in.html"><abbreviation title="Log In"><span class="fa fa-book icon"></span></abbreviation></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="./sign-up.html"><abbreviation title="Sign-up"><span class="fa fa-pencil text-danger"></span></abbreviation></a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+    <script src="js/password-toggler.js"></script>
+    <script src="js/sign-up-validation.js"></script>
+</body>
+</html>
