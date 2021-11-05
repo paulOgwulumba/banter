@@ -1,12 +1,14 @@
-message-row{
+message-row {
   padding: 10px;
 }
 
-p{
+p {
   padding: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -27,10 +29,11 @@ body {
   background-color: aquamarine;
   background-image: url("./images/doggy5.jpg");
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
-html, body{
+html,
+body {
   overflow: initial !important;
 }
 
@@ -47,7 +50,8 @@ html, body{
   max-width: 70%;
   word-wrap: break-word;
   z-index: 108;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .message:after {
@@ -86,7 +90,6 @@ html, body{
   float: right;
 }
 
-
 .message.sent:after {
   border-width: 0px 0 15px 15px;
   border-color: transparent transparent transparent rgb(241, 155, 155);
@@ -94,10 +97,6 @@ html, body{
   top: 0;
   right: -15px;
 }
-
-
-
-
 
 .conversation {
   height: 100%;
@@ -107,7 +106,7 @@ html, body{
 }
 
 .conversation ::-webkit-scrollbar {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 5px;
   height: 1px;
   z-index: 10;
@@ -138,20 +137,20 @@ html, body{
 
 .time {
   font-size: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #ffde78;
   padding: 3px;
 }
 
-.input-field-box{
-  background-color:rgb(105, 20, 20);
+.input-field-box {
+  background-color: rgb(105, 20, 20);
   padding: 5px;
   padding-top: 10px;
   opacity: 0.99;
   overflow: hidden;
 }
 
-.header{
+.header {
   font-family: cursive;
   color: rgb(105, 20, 20);
   padding: 1%;
@@ -163,84 +162,84 @@ html, body{
   background-size: cover;
 }
 
-.header .header-text{
+.header .header-text {
   font-size: 50px;
 }
 
-.mast-head{
+.mast-head {
   background-color: rgb(99, 39, 57);
   padding-top: 10px;
   opacity: 0.98;
 }
 
-.logo-image{
+.logo-image {
   float: left;
 }
 
-.link-text{
+.link-text {
   color: rgb(230, 157, 157);
 }
 
-.link-text-disabled{
+.link-text-disabled {
   color: rgb(90, 136, 90);
 }
 
-.link-text-active{
+.link-text-active {
   color: rgb(230, 157, 157);
   text-decoration: underline;
 }
 
-.link-text:hover{
+.link-text:hover {
   color: rgb(103, 255, 73);
 }
 
-.link-text-active:hover{
+.link-text-active:hover {
   color: rgb(103, 255, 73);
 }
 
-.form-container{
-  background-color: rgb(204, 174, 174); 
+.form-container {
+  background-color: rgb(204, 174, 174);
   padding: 20px;
   margin-top: 2%;
   border-radius: 40px 40px 40px 40px;
   opacity: 0.95;
 }
 
-input::placeholder{
+input::placeholder {
   color: blue;
 }
 
-.eye{
+.eye {
   margin-left: 4px;
   height: 100%;
-  color:rgb(105, 20, 20);
+  color: rgb(105, 20, 20);
 }
 
-.eye:hover{
+.eye:hover {
   color: rgb(209, 38, 38);
 }
 
-.close{
+.close {
   background-color: gray;
 }
 
-.link-icon:hover{
+.link-icon:hover {
   color: rgb(48, 48, 184);
 }
 
-.link-icon{
+.link-icon {
   color: red;
 }
 
-.banter{
+.banter {
   font-family: cursive;
   color: whitesmoke;
 }
 
-.icon{
+.icon {
   color: whitesmoke;
 }
-.foot{
+.foot {
   font-family: cursive;
   color: rgb(105, 20, 20);
   padding: 1%;
@@ -252,7 +251,7 @@ input::placeholder{
   background-size: cover;
 }
 
-.burgundy{
+.burgundy {
   color: rgb(105, 20, 20);
 }
 
@@ -265,7 +264,8 @@ input::placeholder{
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .user-profile.active {
@@ -276,15 +276,15 @@ input::placeholder{
   border-bottom: 1px groove;
   font-style: italic;
   font-weight: bolder;
-  color: black
+  color: black;
 }
 
-.user-profile.active:hover{
+.user-profile.active:hover {
   font-weight: bolder;
   font-size: medium;
 }
 
-.user-profile:hover{
+.user-profile:hover {
   background: rgb(185, 179, 179);
   opacity: 0.6;
   color: black;
@@ -293,7 +293,7 @@ input::placeholder{
 .chat-header {
   background: rgb(48, 12, 12);
   padding: 5px 5px 0px 5px;
-	text-align: left;
+  text-align: left;
   overflow-y: scroll;
   height: 100%;
   float: left;
@@ -306,11 +306,11 @@ input::placeholder{
 .chat-header span {
   font-size: 12px;
   margin: 47px -50px;
-  font-style: 'sans';
+  font-style: "sans";
 }
 
 .chat-header ::-webkit-scrollbar {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 5px;
   height: 1px;
   z-index: 10;
@@ -324,20 +324,20 @@ input::placeholder{
   background: rgb(99, 39, 57);
 }
 
-#app{
+#app {
   height: 100%;
   margin-top: 10px;
 }
 
-.side-nav{
-  background-color: rgb(26, 8, 8); 
-  width: 16%; 
+.side-nav {
+  background-color: rgb(26, 8, 8);
+  width: 16%;
   height: 100%;
   text-align: center;
-  opacity: 0.8
+  opacity: 0.8;
 }
 
-.date-bubble{
+.date-bubble {
   background-color: rgb(17, 15, 15);
   text-align: center;
   border-radius: 20% 20% 20% 20%;
@@ -357,23 +357,23 @@ input::placeholder{
   font-family: Calibri;
 }
 
-.date-bubble:hover{
-  opacity: 0.6
+.date-bubble:hover {
+  opacity: 0.6;
 }
 
-.date-bubble.inactive{
-  display: none
+.date-bubble.inactive {
+  display: none;
 }
 
-.trial{
+.trial {
   align-items: center;
 }
 
-.check{
+.check {
   font-size: small;
 }
 
-.la-box{
+.la-box {
   box-shadow: inset 10px 10px 10px -10px #000000;
   height: calc(100% - 30px);
   background: transparent;
@@ -383,15 +383,15 @@ input::placeholder{
   border-radius: 10px;
 }
 
-
-.la-box .la-box-box{
+.la-box .la-box-box {
   box-shadow: inset 10px 10px 10px -10px #000000;
   height: 90%;
   margin-top: 10px;
   overflow-y: scroll;
   border-radius: 10px;
   padding: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .la-box .la-box-box:after {
@@ -401,7 +401,7 @@ input::placeholder{
 }
 
 .la-box-box::-webkit-scrollbar {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 10px;
   height: 1px;
   z-index: 10;
@@ -409,14 +409,14 @@ input::placeholder{
 
 .la-box-box::-webkit-scrollbar-track {
   background: transparent;
-  box-shadow: inset 10px 10px 10px -10px #000000
+  box-shadow: inset 10px 10px 10px -10px #000000;
 }
 
 .la-box-box::-webkit-scrollbar-thumb {
   background: rgb(99, 39, 57);
 }
 
-.la-small-box{
+.la-small-box {
   box-shadow: inset 10px 10px 10px -10px #000000;
   border-radius: 10px;
   min-height: 10%;
@@ -424,7 +424,7 @@ input::placeholder{
   padding-left: 2%;
 }
 
-.user-card{
+.user-card {
   width: 80%;
   border-radius: 5px;
   min-height: 55px;
@@ -438,7 +438,7 @@ input::placeholder{
   opacity: 0.8;
 }
 
-.user-card:hover{
+.user-card:hover {
   cursor: pointer;
   opacity: 0.99;
   background-color: rgb(20, 5, 5);
@@ -452,17 +452,17 @@ input::placeholder{
   padding-left: 8px;
 }
 
-.white-text{
-  color: white
+.white-text {
+  color: white;
 }
 
-.request-icon{
-  color:rgb(207, 175, 175);
+.request-icon {
+  color: rgb(207, 175, 175);
   font-size: large;
 }
 
-.request-icon:hover{
-  color: rgb(129, 55, 55);;
+.request-icon:hover {
+  color: rgb(129, 55, 55);
   cursor: pointer;
   font-size: larger;
 }
