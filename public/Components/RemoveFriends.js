@@ -13,7 +13,7 @@ class RemoveFriends extends Component{
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/friends/${this.props.userId}`)
+    fetch(`http://localhost:3000/friend/get/all/${this.props.userId}`)
       .then(response => response.json())
       .then(data => {
         //console.log(data)

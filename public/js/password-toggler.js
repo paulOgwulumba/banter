@@ -29,6 +29,7 @@ function addPasswordToggler(pt = document.getElementById("password-toggler"), in
     }
   })
 }
+
 let pt = document.getElementById("password-toggler2")
 addPasswordToggler()
 addPasswordToggler(pt, "confirmPassword")

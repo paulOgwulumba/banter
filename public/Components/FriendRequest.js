@@ -12,7 +12,7 @@ class FriendRequest extends Component{
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/friend-requests/${this.props.userId}`)
+    fetch(`http://localhost:3000/friend-request/get/all/${this.props.userId}`)
       .then(response => response.json())
       .then(data => {
         let cards = []

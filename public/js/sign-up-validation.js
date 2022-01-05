@@ -74,7 +74,7 @@ button.addEventListener("click", (event) => {
 
   //password validation
   if(/\s/.test(password)){
-    document.getElementById("passwordHelp").textContent = "Password cannot contain spaces"
+    document.getElementById("passwordHelp").textContent = "Password cannot contain whitespaces"
     formIsValid = false
     return
   }
@@ -112,7 +112,7 @@ button.addEventListener("click", (event) => {
           document.getElementById("usernameHelp").textContent = data.message
         }
         else{
-          console.log("Something is wrong with server")
+          console.log("Something is wrong with the server!");
         }
       })
   }

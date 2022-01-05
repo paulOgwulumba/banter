@@ -17,10 +17,10 @@ class AddFriends extends Component{
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/all-friends/${this.props.userId}`)
+    fetch(`http://localhost:3000/user/all/${this.props.userId}`)
       .then(response => response.json())
       .then(data => {
-        fetch(`http://localhost:3000/friends/${this.props.userId}`)
+        fetch(`http://localhost:3000/friend/get/all/${this.props.userId}`)
         .then(res => res.json())
         .then(information => {
           let toBeAdded = data.filter(element => {

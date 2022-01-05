@@ -11,7 +11,7 @@ class UserCard extends Component{
 
   componentDidMount(){
     if(this.props.action === "add"){
-      fetch(`http://localhost:3000/check-add/${this.props.userId}/${this.props.username}`)
+      fetch(`http://localhost:3000/check/add/${this.props.userId}/${this.props.username}`)
         .then(response => response.json())
         .then(data => {
           if(data.status){
@@ -20,7 +20,7 @@ class UserCard extends Component{
         })
     }
     else{
-      fetch(`http://localhost:3000/check-remove/${this.props.userId}/${this.props.username}`)
+      fetch(`http://localhost:3000/check/remove/${this.props.userId}/${this.props.username}`)
         .then(response => response.json())
         .then(data => {
           if(data.status){
@@ -31,7 +31,7 @@ class UserCard extends Component{
   }
 
   cancelRequest(event){
-    fetch(`http://localhost:3000/cancel-request/${this.props.userId}/${this.props.username}`)
+    fetch(`http://localhost:3000/friend-request/cancel/${this.props.userId}/${this.props.username}`)
     this.setState({status: "unclicked"})
   }
 
@@ -56,7 +56,7 @@ class UserCard extends Component{
         fetch(`http://localhost:3000/friend/${this.props.userId}/${this.props.username}`, options)
       }
       else{
-        fetch(`http://localhost:3000/friend-request/${this.props.userId}/${this.props.username}`)
+        fetch(`http://localhost:3000/friend-request/send/${this.props.userId}/${this.props.username}`)
           .then(response => response.json())
           .then(data => console.log(data))
       }

@@ -32,7 +32,7 @@ class MessageBox extends Component{
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/messages/${this.props.userId}`)
+    fetch(`http://localhost:3000/message/get/all/${this.props.userId}`)
       .then(response => response.json())
       .then(data => {
         //console.log(data)
@@ -106,7 +106,7 @@ class MessageBox extends Component{
       messages: newMessageArray,
       shouldScrollDown: true
     })
-    fetch(`http://localhost:3000/seen/${this.props.userId}/${event.target.textContent}`)
+    fetch(`http://localhost:3000/message/seen/${this.props.userId}/${event.target.textContent}`)
   }
 
   handleChange(event){
@@ -118,7 +118,7 @@ class MessageBox extends Component{
   setTimerListener(){
     const timerListener = setInterval((time)=> {
       try{
-        fetch(`http://localhost:3000/messages/${this.props.userId}`)
+        fetch(`http://localhost:3000/message/get/all/${this.props.userId}`)
           .then(response => response.json())
           .then(data => {
             let names = Object.keys(data.friend)
@@ -147,7 +147,7 @@ class MessageBox extends Component{
               headers: heads
             })
           })
-          fetch(`http://localhost:3000/seen/${this.props.userId}/${this.state.activeHeader}`)
+          fetch(`http://localhost:3000/message/seen/${this.props.userId}/${this.state.activeHeader}`)
           this.render()
       }
       catch(e){}

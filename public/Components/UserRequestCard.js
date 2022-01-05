@@ -9,7 +9,7 @@ class UserRequestCard extends Component{
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/check-request/${this.props.userId}/${this.props.username}`)
+    fetch(`http://localhost:3000/check/request/${this.props.userId}/${this.props.username}`)
       .then(response => response.json())
       .then(data => {
         if(!data.status){
@@ -20,14 +20,14 @@ class UserRequestCard extends Component{
 
   handleReject(event){
     this.setState({status: "rejected"})
-    fetch(`http://localhost:3000/reject-request/${this.props.userId}/${this.props.username}`)
+    fetch(`http://localhost:3000/friend-request/reject/${this.props.userId}/${this.props.username}`)
       .then(response => response.json())
       .then(data => console.log(data))
   }
 
   handleConfirm(event){
     this.setState({status: "confirmed"})
-    fetch(`http://localhost:3000/accept-request/${this.props.userId}/${this.props.username}`)
+    fetch(`http://localhost:3000/friend-request/accept/${this.props.userId}/${this.props.username}`)
       .then(response => response.json())
       .then(data => console.log(data))
   }
