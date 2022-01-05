@@ -11,7 +11,6 @@ app.listen(port, ()=>{
 })
 
 const Datastore = require('nedb')
-const database = new Datastore({filename: "database.db", autoload: true, corruptAlertThreshold: 0.9})
 const users_db = new Datastore({filename: "database/users.db", autoload: true, corruptAlertThreshold: 0.5})
 const messages_db = new Datastore({filename: "database/messages.db", autoload: true, corruptAlertThreshold: 0.9})
 const friends_db = new Datastore({filename: "database/friends.db", autoload: true, corruptAlertThreshold: 0.5})

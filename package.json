@@ -1,17 +1,18 @@
 {
-  "name": "chat_app_server",
-  "version": "1.0.0",
-  "description": "A simple server for a chat platform",
-  "main": "index.js",
+  "name": "new",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "Paul Ogwulumba",
-  "license": "ISC",
   "dependencies": {
+    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nedb": "^1.8.0",
-    "nodemon": "^2.0.4"
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "nedb": "^1.8.0"
   }
 }
