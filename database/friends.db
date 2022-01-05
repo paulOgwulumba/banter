@@ -1,4 +1,2 @@
-{"username":"madam_bae","friends":[],"_id":"Ya4CZDNDhiA4YVpm"}
-{"username":"paul044","friends":[],"_id":"mN1OdCoWX6eSXsgD"}
-{"username":"paul044","friends":[{"username":"madam_bae"}],"_id":"mN1OdCoWX6eSXsgD"}
 {"username":"madam_bae","friends":[{"username":"paul044"}],"_id":"Ya4CZDNDhiA4YVpm"}
+{"username":"paul044","friends":[{"username":"madam_bae"}],"_id":"mN1OdCoWX6eSXsgD"}

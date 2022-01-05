@@ -36,7 +36,7 @@ button.addEventListener("click", (event) => {
       },
       body: JSON.stringify(obj)
     }
-    fetch("http://localhost:3000/user", options)
+    fetch("http://localhost:3000/user/login", options)
       .then(response => response.json())
       .then(data => {
         if(data.status === "success"){

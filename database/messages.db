@@ -1,22 +1,2 @@
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"bebe","time":"2020-07-23T14:03:21.572Z","outgoing":true,"status":0},{"message":"can you hear me?","time":"2020-07-23T14:03:35.839Z","outgoing":true,"status":0}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":1}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false,"status":2}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":2}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
 {"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":2}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
 {"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false,"status":2}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false,"status":2}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":2}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false,"status":2}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":2}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
-{"username":"paul044","friend":{"madam_bae":{"username":"madam_bae","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":false,"status":2}]}},"_id":"SIVaXUzWMgd99CYX"}
-{"username":"madam_bae","friend":{"paul044":{"username":"paul044","messages":[{"message":"baby","time":"2020-07-23T14:06:29.653Z","outgoing":true,"status":2}]}},"_id":"Ji5Uv2RHPmDJa0Kr"}
