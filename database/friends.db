@@ -1,2 +1,3 @@
+{"username":"brad_pitt","friends":[],"_id":"9yhKZwUNwqP1Fx3F"}
 {"username":"madam_bae","friends":[{"username":"paul044"}],"_id":"Ya4CZDNDhiA4YVpm"}
-{"username":"paul044","friends":[{"username":"madam_bae"}],"_id":"mN1OdCoWX6eSXsgD"}
+{"username":"paul044","friends":[{"username":"madam_bae"},{"username":"brad_pitt"}],"_id":"mN1OdCoWX6eSXsgD"}

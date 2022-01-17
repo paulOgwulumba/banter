@@ -107,13 +107,16 @@ router.get('/request/:id/:username', (request, response) => {
             if (error) throw error
 
             if (doc !== null) {
-                doc.requests.forEach(request => {
+                let status = false;
+
+                for (let request of doc.requests) {
                     if (request === friendName) {
-                        response.send({status: true})
+                        status =  true;
+                        break;
                     }
-                })
+                }
             
-            response.send({status: false})
+                response.send({status: status})
             }
             else {
                 console.error(`Failed to find document. username: ${username} db: friend_requests_db`)

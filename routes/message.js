@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {  users_db, messages_db, friends_db } = require('../utils/db');
+const { seeAllMessages } = require('../utils/message-handles')
 
 /**
  * Record in the database that user with ID 'id' viewed message from user with username 'username'

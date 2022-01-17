@@ -7,9 +7,9 @@ To run this project, clone the repo then run this command in the base directory 
 ````
 npm install --save
 ````
-Start the express server, by running this command in the base directory:
+Start the express development server, by running this command in the base directory:
 ````
-node index
+npm run dev
 ````
 Start the development server for react by running this command in the __/public__ directory
 ````
