@@ -4,7 +4,7 @@ const { usersDB, friendsDB, friendRequestsDB } = require('../utils/db');
 const router = express.Router();
 
 /**
- *  Checks if a given user with database ID 'id' already sent a friend request to another 
+ *  Checks if a given user with database ID 'id' already sent a friend request to another
  *  user of username 'username'.
  */
 router.get('/add/:id/:username', (request, response) => {
@@ -46,7 +46,7 @@ router.get('/add/:id/:username', (request, response) => {
 });
 
 /**
- *  Checks if a given user with database ID 'id' successfully deleted another user of 
+ *  Checks if a given user with database ID 'id' successfully deleted another user of
  *  username 'username' from their friend list.
  */
 router.get('/remove/:id/:username', (request, response) => {
